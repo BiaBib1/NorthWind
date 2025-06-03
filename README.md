@@ -164,6 +164,7 @@ for product in data['products']:
 ```
 Esto permite tener datos estructurados y fácilmente consultables mediante funciones y operadores JSONB de PostgreSQL.
 
+**Ejemplo de query:**
 ![Ejemplo JSONB](./img/json.png)
 ---
 
@@ -171,21 +172,12 @@ Esto permite tener datos estructurados y fácilmente consultables mediante funci
 
 - **Productos con stock bajo:**  
   ```sql
+  SELECT * FROM vw_sales_summary_by_customer LIMIT 5;
   SELECT * FROM vw_inventory_status WHERE stock_status = 'LOW STOCK';
+  SELECT caracteristicas_json FROM products WHERE caracteristicas_json IS NOT NULL LIMIT 5;
   ```
 - **Ventas por categoría:**  
   Consulta el archivo `NorthWind_views_exercises.sql` para muchas otras vistas de análisis.
-
----
-
-## 🧪 Validación de la Instalación
-
-Después de importar el dump, puedes verificar las nuevas funcionalidades con consultas como:
-```sql
-SELECT * FROM vw_sales_summary_by_customer LIMIT 5;
-SELECT * FROM vw_inventory_status WHERE stock_status = 'LOW STOCK';
-SELECT caracteristicas_json FROM products WHERE caracteristicas_json IS NOT NULL LIMIT 5;
-```
 
 ---
 
