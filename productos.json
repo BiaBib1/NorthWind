@@ -1,0 +1,543 @@
+{
+  "products": [
+    {
+      "product_id": 1,
+      "caracteristicas": {
+        "categoria": "Beverages",
+        "subcategoria": "Tea"
+      }
+    },
+    {
+      "product_id": 2,
+      "caracteristicas": {
+        "categoria": "Condiments",
+        "subcategoria": "Sauces"
+      }
+    },
+    {
+      "product_id": 3,
+      "caracteristicas": {
+        "categoria": "Confections",
+        "subcategoria": "Candy"
+      }
+    },
+    {
+      "product_id": 4,
+      "caracteristicas": {
+        "categoria": "Dairy Products",
+        "subcategoria": "Cheese"
+      }
+    },
+    {
+      "product_id": 5,
+      "caracteristicas": {
+        "categoria": "Grains/Cereals",
+        "subcategoria": "Pasta"
+      }
+    },
+    {
+      "product_id": 6,
+      "caracteristicas": {
+        "categoria": "Meat/Poultry",
+        "subcategoria": "Chicken"
+      }
+    },
+    {
+      "product_id": 7,
+      "caracteristicas": {
+        "categoria": "Produce",
+        "subcategoria": "Vegetables"
+      }
+    },
+    {
+      "product_id": 8,
+      "caracteristicas": {
+        "categoria": "Seafood",
+        "subcategoria": "Fish"
+      }
+    },
+    {
+      "product_id": 9,
+      "caracteristicas": {
+        "categoria": "Beverages",
+        "subcategoria": "Coffee"
+      }
+    },
+    {
+      "product_id": 10,
+      "caracteristicas": {
+        "categoria": "Condiments",
+        "subcategoria": "Spices"
+      }
+    },
+    {
+      "product_id": 11,
+      "caracteristicas": {
+        "categoria": "Confections",
+        "subcategoria": "Chocolate"
+      }
+    },
+    {
+      "product_id": 12,
+      "caracteristicas": {
+        "categoria": "Dairy Products",
+        "subcategoria": "Yogurt"
+      }
+    },
+    {
+      "product_id": 13,
+      "caracteristicas": {
+        "categoria": "Grains/Cereals",
+        "subcategoria": "Bread"
+      }
+    },
+    {
+      "product_id": 14,
+      "caracteristicas": {
+        "categoria": "Meat/Poultry",
+        "subcategoria": "Beef"
+      }
+    },
+    {
+      "product_id": 15,
+      "caracteristicas": {
+        "categoria": "Produce",
+        "subcategoria": "Fruits"
+      }
+    },
+    {
+      "product_id": 16,
+      "caracteristicas": {
+        "categoria": "Seafood",
+        "subcategoria": "Shellfish"
+      }
+    },
+    {
+      "product_id": 17,
+      "caracteristicas": {
+        "categoria": "Beverages",
+        "subcategoria": "Juices"
+      }
+    },
+    {
+      "product_id": 18,
+      "caracteristicas": {
+        "categoria": "Condiments",
+        "subcategoria": "Dressings"
+      }
+    },
+    {
+      "product_id": 19,
+      "caracteristicas": {
+        "categoria": "Confections",
+        "subcategoria": "Pastries"
+      }
+    },
+    {
+      "product_id": 20,
+      "caracteristicas": {
+        "categoria": "Dairy Products",
+        "subcategoria": "Ice Cream"
+      }
+    },
+    {
+      "product_id": 21,
+      "caracteristicas": {
+        "categoria": "Grains/Cereals",
+        "subcategoria": "Rice"
+      }
+    },
+    {
+      "product_id": 22,
+      "caracteristicas": {
+        "categoria": "Meat/Poultry",
+        "subcategoria": "Pork"
+      }
+    },
+    {
+      "product_id": 23,
+      "caracteristicas": {
+        "categoria": "Produce",
+        "subcategoria": "Herbs"
+      }
+    },
+    {
+      "product_id": 24,
+      "caracteristicas": {
+        "categoria": "Seafood",
+        "subcategoria": "Crustaceans"
+      }
+    },
+    {
+      "product_id": 25,
+      "caracteristicas": {
+        "categoria": "Beverages",
+        "subcategoria": "Soft Drinks"
+      }
+    },
+    {
+      "product_id": 26,
+      "caracteristicas": {
+        "categoria": "Condiments",
+        "subcategoria": "Ketchup"
+      }
+    },
+    {
+      "product_id": 27,
+      "caracteristicas": {
+        "categoria": "Confections",
+        "subcategoria": "Gummies"
+      }
+    },
+    {
+      "product_id": 28,
+      "caracteristicas": {
+        "categoria": "Dairy Products",
+        "subcategoria": "Butter"
+      }
+    },
+    {
+      "product_id": 29,
+      "caracteristicas": {
+        "categoria": "Grains/Cereals",
+        "subcategoria": "Oats"
+      }
+    },
+    {
+      "product_id": 30,
+      "caracteristicas": {
+        "categoria": "Meat/Poultry",
+        "subcategoria": "Turkey"
+      }
+    },
+    {
+      "product_id": 31,
+      "caracteristicas": {
+        "categoria": "Produce",
+        "subcategoria": "Nuts"
+      }
+    },
+    {
+      "product_id": 32,
+      "caracteristicas": {
+        "categoria": "Seafood",
+        "subcategoria": "Tuna"
+      }
+    },
+    {
+      "product_id": 33,
+      "caracteristicas": {
+        "categoria": "Beverages",
+        "subcategoria": "Energy Drinks"
+      }
+    },
+    {
+      "product_id": 34,
+      "caracteristicas": {
+        "categoria": "Condiments",
+        "subcategoria": "Mustard"
+      }
+    },
+    {
+      "product_id": 35,
+      "caracteristicas": {
+        "categoria": "Confections",
+        "subcategoria": "Cookies"
+      }
+    },
+    {
+      "product_id": 36,
+      "caracteristicas": {
+        "categoria": "Dairy Products",
+        "subcategoria": "Cream Cheese"
+      }
+    },
+    {
+      "product_id": 37,
+      "caracteristicas": {
+        "categoria": "Grains/Cereals",
+        "subcategoria": "Cereal Bars"
+      }
+    },
+    {
+      "product_id": 38,
+      "caracteristicas": {
+        "categoria": "Meat/Poultry",
+        "subcategoria": "Lamb"
+      }
+    },
+    {
+      "product_id": 39,
+      "caracteristicas": {
+        "categoria": "Produce",
+        "subcategoria": "Potatoes"
+      }
+    },
+    {
+      "product_id": 40,
+      "caracteristicas": {
+        "categoria": "Seafood",
+        "subcategoria": "Salmon"
+      }
+    },
+    {
+      "product_id": 41,
+      "caracteristicas": {
+        "categoria": "Beverages",
+        "subcategoria": "Herbal Tea"
+      }
+    },
+    {
+      "product_id": 42,
+      "caracteristicas": {
+        "categoria": "Condiments",
+        "subcategoria": "Vinegar"
+      }
+    },
+    {
+      "product_id": 43,
+      "caracteristicas": {
+        "categoria": "Confections",
+        "subcategoria": "Marshmallows"
+      }
+    },
+    {
+      "product_id": 44,
+      "caracteristicas": {
+        "categoria": "Dairy Products",
+        "subcategoria": "Sour Cream"
+      }
+    },
+    {
+      "product_id": 45,
+      "caracteristicas": {
+        "categoria": "Grains/Cereals",
+        "subcategoria": "Granola"
+      }
+    },
+    {
+      "product_id": 46,
+      "caracteristicas": {
+        "categoria": "Meat/Poultry",
+        "subcategoria": "Duck"
+      }
+    },
+    {
+      "product_id": 47,
+      "caracteristicas": {
+        "categoria": "Produce",
+        "subcategoria": "Onions"
+      }
+    },
+    {
+      "product_id": 48,
+      "caracteristicas": {
+        "categoria": "Seafood",
+        "subcategoria": "Shrimp"
+      }
+    },
+    {
+      "product_id": 49,
+      "caracteristicas": {
+        "categoria": "Beverages",
+        "subcategoria": "Sparkling Water"
+      }
+    },
+    {
+      "product_id": 50,
+      "caracteristicas": {
+        "categoria": "Condiments",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 51,
+      "caracteristicas": {
+        "categoria": "Confections",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 52,
+      "caracteristicas": {
+        "categoria": "Dairy Products",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 53,
+      "caracteristicas": {
+        "categoria": "Grains/Cereals",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 54,
+      "caracteristicas": {
+        "categoria": "Meat/Poultry",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 55,
+      "caracteristicas": {
+        "categoria": "Produce",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 56,
+      "caracteristicas": {
+        "categoria": "Seafood",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 57,
+      "caracteristicas": {
+        "categoria": "Beverages",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 58,
+      "caracteristicas": {
+        "categoria": "Condiments",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 59,
+      "caracteristicas": {
+        "categoria": "Confections",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 60,
+      "caracteristicas": {
+        "categoria": "Dairy Products",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 61,
+      "caracteristicas": {
+        "categoria": "Grains/Cereals",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 62,
+      "caracteristicas": {
+        "categoria": "Meat/Poultry",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 63,
+      "caracteristicas": {
+        "categoria": "Produce",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 64,
+      "caracteristicas": {
+        "categoria": "Seafood",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 65,
+      "caracteristicas": {
+        "categoria": "Beverages",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 66,
+      "caracteristicas": {
+        "categoria": "Condiments",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 67,
+      "caracteristicas": {
+        "categoria": "Confections",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 68,
+      "caracteristicas": {
+        "categoria": "Dairy Products",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 69,
+      "caracteristicas": {
+        "categoria": "Grains/Cereals",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 70,
+      "caracteristicas": {
+        "categoria": "Meat/Poultry",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 71,
+      "caracteristicas": {
+        "categoria": "Produce",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 72,
+      "caracteristicas": {
+        "categoria": "Seafood",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 73,
+      "caracteristicas": {
+        "categoria": "Beverages",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 74,
+      "caracteristicas": {
+        "categoria": "Condiments",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 75,
+      "caracteristicas": {
+        "categoria": "Confections",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 76,
+      "caracteristicas": {
+        "categoria": "Dairy Products",
+        "subcategoria": null
+      }
+    },
+    {
+      "product_id": 77,
+      "caracteristicas": {
+        "categoria": "Grains/Cereals",
+        "subcategoria": null
+      }
+    }
+  ]
+}
