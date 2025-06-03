@@ -135,3 +135,15 @@ ON products USING GIN (caracteristicas_json);
 
 -- Crear un file dump de la base de datos Northwind
 pg_dump -U postgres -h localhost -p 5432 -d northwind -F p -f "C:\Users\Biabibi\Documents\GitHub\InProgress\northwind_dump.sql"
+
+-- Clonar el repositorio NorthWind y entrar en la carpeta northwind_dump
+git clone https://github.com/BiaBib1/NorthWind.git
+cd NorthWind\northwind_dump
+
+-- Entrar en la consola de PostgreSQL
+psql -U postgres
+CREATE DATABASE northwind;
+quit
+
+-- Importar el archivo dump en la base de datos Northwind
+PS C:\Users\Biabibi\NorthWind\northwind_dump> psql -U postgres -d northwind -f northwind_dump.sql
