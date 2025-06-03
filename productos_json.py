@@ -2,14 +2,14 @@ import json
 import psycopg2
 
 # Carica il file JSON
-with open('C:/Users/Biabibi/Documents/GitHub/InProgress/NorthWind/productos.json', 'r') as file:
+with open('C:/Users/ruta/productos.json', 'r') as file:    # <-- Sostituir la ruta
     data = json.load(file)
 
 # Connessione al database
 connection = psycopg2.connect(
     dbname='northwind',
-    user='postgres',      # <-- Sostituisci con il tuo username
-    password='0000',  # <-- Sostituisci con la tua password
+    user='postgres',      # <-- Sostituir con el username
+    password='****',  # <-- Sostituiri con la password
     host='localhost',
     port='5432'
 )
