@@ -1,7 +1,7 @@
 # NorthWind PostgreSQL - Versión Modificada
 
 En este repositorio encontrarás una versión personalizada de la base de datos Northwind para PostgreSQL, que incorpora nuevas funcionalidades, vistas, triggers y un manejo avanzado de JSONB.
-Las mejoras implementadas incluyen
+Las mejoras implementadas incluyen:
 
 - **Gestión de inventario**
 - **Análisis de ventas por departamento**
@@ -87,7 +87,7 @@ Northwind es una base de datos de ejemplo utilizada para practicar y demostrar c
    psql -U postgres -d northwind -f northwind_dump.sql
    ```
 
-O bien, usando pgAdmin: crea la base de datos `northwind` y usa "Restore" seleccionando `northwind_dump.sql`.
+Usando pgAdmin: crea la base de datos `northwind` y usa "Restore" seleccionando `northwind_dump.sql`.
 
 ---
 
@@ -99,7 +99,6 @@ Todos los cambios con las explicaciones se encuentran en el archivo `modificacio
 Se ha imaginado una empresa que utiliza la base de datos Northwind, dividida en tres departamentos:
  ventas, almacén y contabilidad.
  Por lo tanto, se han creado dos vistas para cada departamento asì que se pueden realizar consultas específicas.
- Ademas se ha creado tambien un trigger para actualizar automáticamente la disponibilidad del inventario después de un pedido. */
 
 
 - **Departamento Ventas**:  
@@ -115,6 +114,7 @@ Se ha imaginado una empresa que utiliza la base de datos Northwind, dividida en 
   - `vw_employee_sales`: ventas por empleado.
 
 ### 2. Trigger de Actualización de Stock
+ Se ha creado tambien un trigger para actualizar automáticamente la disponibilidad del inventario después de un pedido. */
 
 - **Trigger** `trg_update_stock_after_order`  
   Actualiza automáticamente la cantidad en almacén de los productos tras cada nuevo pedido (`AFTER INSERT ON order_details`).
@@ -189,7 +189,7 @@ Esto permite tener datos estructurados y fácilmente consultables mediante funci
   SELECT * FROM vw_inventory_status WHERE stock_status = 'LOW STOCK';
   SELECT caracteristicas_json FROM products WHERE caracteristicas_json IS NOT NULL LIMIT 5;
   ```
-- **Ventas por categoría:**  
+- **Vistas:**  
   Consulta el archivo `NorthWind_views_exercises.sql` para muchas otras vistas de análisis.
 
 ---
@@ -202,16 +202,21 @@ Esto permite tener datos estructurados y fácilmente consultables mediante funci
 
 ---
 
-## 🕸️ Webgrafía
-- https://geoinnova.org/blog-territorio/libreria-psycopg2-para-acceder-a-una-base-de-datos-postgis-con-python/
-- https://www.w3schools.com/postgresql/postgresql_case.php
-- https://docs.google.com/presentation/d/1xpuJIBf2FdH8j-F68Cx4eFz3ZYbKByKcyBJzguYPM-E/edit?slide=id.g32491d1b375_0_0#slide=id.g32491d1b375_0_0
-- https://docs.google.com/presentation/d/1r17tDOjFcGTkwJOzmgayzEhTOG0tcwo6-S7b8eKXUmE/edit?slide=id.p#slide=id.p
-- https://chatgpt.com/
-- https://copilot.microsoft.com/
 
-**Github Repository**
-https://github.com/BiaBib1/NorthWind_PruebaPractica/tree/main
+## 🕸️ Webgrafía
+
+- [Uso de psycopg2 en Python (GeoInnova)](https://geoinnova.org/blog-territorio/libreria-psycopg2-para-acceder-a-una-base-de-datos-postgis-con-python/)
+- [PostgreSQL (W3Schools)](https://www.w3schools.com/postgresql/postgresql_case.php)
+- [UF1472: SQL](https://docs.google.com/presentation/d/1xpuJIBf2FdH8j-F68Cx4eFz3ZYbKByKcyBJzguYPM-E/edit?slide=id.g32491d1b375_0_0#slide=id.g32491d1b375_0_0)
+- [Presentación: SQL_Northwind](https://docs.google.com/presentation/d/1r17tDOjFcGTkwJOzmgayzEhTOG0tcwo6-S7b8eKXUmE/edit?slide=id.p#slide=id.p)
+- [Postgres_jason](https://docs.google.com/document/d/10kM7Yr-GmqUkojui52djI8rN5D1ECJUEYi6iJns1lq4/edit?tab=t.0#heading=h.p9h5tbe4wdbq)
+- [Ejercicios Vistas](https://docs.google.com/document/d/1SYe_v2GM7_54a0Ovh8tzMO4PgxWyFcAw3yEp6NMnfRM/edit?tab=t.0)
+- [ChatGPT](https://chatgpt.com/)
+- [GitHub Copilot](https://copilot.microsoft.com/)
+
+**Repositorio en GitHub:**  
+
+- [NorthWind_PruebaPractica](https://github.com/BiaBib1/NorthWind_PruebaPractica/tree/main)
 
 ---
 **Nota**: El archivo `northwind_dump/northwind_dump.sql` contiene todas las modificaciones y debe ser importado para ver el resultado final en PostgreSQL/pgAdmin.

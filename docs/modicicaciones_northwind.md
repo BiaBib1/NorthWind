@@ -165,7 +165,7 @@ ON products USING GIN (caracteristicas_json);
 
 **Comando para crear el dump:**
 ```bash
-pg_dump -U postgres -h localhost -p 5432 -d northwind -F p -f "C:\Users\rutanorthwind_dump.sql"  # Modifica la ruta según tu sistema
+pg_dump -U postgres -h localhost -p 5432 -d northwind -F p -f "C:\Users\ruta\northwind_dump.sql"  # Modifica la ruta según tu sistema
 ```
 
 ---
