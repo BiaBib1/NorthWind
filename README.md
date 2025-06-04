@@ -12,19 +12,21 @@ Las mejoras implementadas incluyen
 
 ## 📁 Estructura del Repositorio
 
+
 ```
 NorthWind/
-├── README.md
-├── modificaciones_northwind.sql         # Script con todas las modificaciones y mejoras
-├── NorthWind_views_exercises.sql        # Ejemplos de vistas avanzadas
-├── productos_json.py                    # Script Python para actualizar la columna JSONB
-├── productos.json                       # Datos de ejemplo para la columna JSONB
-├── img/
-│   ├── diagrama.png
-│   ├── FK_us_states.png
-│   └── json.png
-└── northwind_dump/
-    └── northwind_dump.sql               # Dump completo para importar en PostgreSQL
+├── README.md                                 # Documentación principal del proyecto
+├── productos_json.py                         # Script Python para actualizar la columna JSONB en products
+├── productos.json                            # Datos de ejemplo para la columna JSONB de products
+├── docs/                                     
+│   ├── modificaciones_northwind.md           # Explicación detallada de las modificaciones
+│   └── northwind_views_exercises.md          # Explicación de las vistas avanzadas
+├── img/                                      
+│   ├── diagrama.png                          # Diagrama entidad-relación actualizado
+│   ├── FK_us_states.png                      # Diagrama de la relación us_states-region
+│   └── json.png                              # Ejemplo visual de uso de JSONB
+└── northwind_dump/                           
+    └── northwind_dump.sql                    # Dump completo para importar en PostgreSQL y ver todas las modificaciones
 ```
 
 ---
@@ -44,7 +46,9 @@ Northwind es una base de datos de ejemplo utilizada para practicar y demostrar c
 - **PostgreSQL** 12+
 - **pgAdmin** (opcional)
 - **Python** (para el script de actualización JSON)
-- **SQL Dump** para instalación rápida
+            - **json** (librería de python)
+            - **psycopg2** (librería de python)
+- **SQL Dump** (para instalación rápida)
 
 ---
 
@@ -88,6 +92,7 @@ O bien, usando pgAdmin: crea la base de datos `northwind` y usa "Restore" selecc
 ---
 
 ## 🔍 Principales Modificaciones 
+Todos los cambios con las explicaciones se encuentran en el archivo `modificaciones_northwind.md` en la carpeta `docs`.
 
 ### 1. Vistas
 
@@ -151,6 +156,12 @@ Script Python que:
 - Se conecta a la base de datos PostgreSQL
 - Actualiza la columna `caracteristicas_json` de la tabla `products` para cada producto, insertando los datos JSON correspondientes.
 
+**Instalar librerías para ejecutar el programa:**
+```python
+    pip install psycopg2-binary
+    pip install json
+```
+
 **Ejemplo de funcionamiento:**
 ```python
 for product in data['products']:
@@ -165,7 +176,9 @@ for product in data['products']:
 Esto permite tener datos estructurados y fácilmente consultables mediante funciones y operadores JSONB de PostgreSQL.
 
 **Ejemplo de query:**
+
 ![Ejemplo JSONB](./img/json.png)
+
 ---
 
 ## 📊 Ejemplos de Consultas y Vistas
@@ -189,4 +202,16 @@ Esto permite tener datos estructurados y fácilmente consultables mediante funci
 
 ---
 
+## 🕸️ Webgrafía
+- https://geoinnova.org/blog-territorio/libreria-psycopg2-para-acceder-a-una-base-de-datos-postgis-con-python/
+- https://www.w3schools.com/postgresql/postgresql_case.php
+- https://docs.google.com/presentation/d/1xpuJIBf2FdH8j-F68Cx4eFz3ZYbKByKcyBJzguYPM-E/edit?slide=id.g32491d1b375_0_0#slide=id.g32491d1b375_0_0
+- https://docs.google.com/presentation/d/1r17tDOjFcGTkwJOzmgayzEhTOG0tcwo6-S7b8eKXUmE/edit?slide=id.p#slide=id.p
+- https://chatgpt.com/
+- https://copilot.microsoft.com/
+
+**Github Repository**
+https://github.com/BiaBib1/NorthWind_PruebaPractica/tree/main
+
+---
 **Nota**: El archivo `northwind_dump/northwind_dump.sql` contiene todas las modificaciones y debe ser importado para ver el resultado final en PostgreSQL/pgAdmin.

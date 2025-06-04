@@ -1,9 +1,13 @@
 
 
 /* Se ha imaginado una empresa que utiliza la base de datos Northwind, dividida en tres departamentos:
- ventas, almacén y contabilidad.
- Por lo tanto, se han creado dos vistas para cada departamento asì que se pueden realizar consultas específicas.
- Ademas se ha creado tambien un trigger para actualizar automáticamente la disponibilidad del inventario después de un pedido. */
+ ventas, almacén y contabilidad. Por lo tanto, se han creado dos vistas para cada departamento asì que se pueden realizar consultas específicas.
+ Ademas se ha creado tambien un trigger para actualizar automáticamente la disponibilidad del inventario después de un pedido.
+ Se modifica la tabla us_states para relacionarla con la tabla region.
+ Se añade una columna JSONB a la tabla products para almacenar características adicionales de los productos.
+Se crea un índice en la columna JSONB para mejorar el rendimiento de las consultas.
+Se crea un dump de la base de datos Northwind modificada
+Se explica cómo clonar el repositorio NorthWind modificado de GitHub. */
 
 -- VISTAS --
 
@@ -125,16 +129,25 @@ FOREIGN KEY (region_id)
 REFERENCES region(region_id)
 ON DELETE SET NULL;
 
+-- JSONB
+
 -- MODIFICACIÓN DE LA TABLA PRODUCTS PARA AÑADIR UN CAMPO JSONB
 ALTER TABLE products
 ADD COLUMN caracteristicas_json JSONB;
+
+-- Ejecutar el file python productos_json.py para añadir datos a la columna JSONB
 
 -- Crear index
 CREATE INDEX idx_products_caracteristicas_jsonb
 ON products USING GIN (caracteristicas_json);
 
--- Crear un file dump de la base de datos Northwind
-pg_dump -U postgres -h localhost -p 5432 -d northwind -F p -f "C:\Users\Biabibi\Documents\GitHub\InProgress\northwind_dump.sql"
+--DUMP DE LA BASE DE DATOS NORTHWIND
+
+-- Crear un file dump de la base de datos Northwind modificada
+pg_dump -U postgres -h localhost -p 5432 -d northwind -F p -f "C:\Users\rutanorthwind_dump.sql"  -- Modifica la ruta según tu sistema
+
+
+-- GITHUB
 
 -- Clonar el repositorio NorthWind y entrar en la carpeta northwind_dump
 git clone https://github.com/BiaBib1/NorthWind.git
@@ -146,4 +159,4 @@ CREATE DATABASE northwind;
 quit
 
 -- Importar el archivo dump en la base de datos Northwind
-PS C:\Users\Biabibi\NorthWind\northwind_dump> psql -U postgres -d northwind -f northwind_dump.sql
+PS C:\Users\ruta\northwind_dump> psql -U postgres -d northwind -f northwind_dump.sql  -- Modifica la ruta según tu sistema
