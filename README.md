@@ -114,7 +114,7 @@ Se ha imaginado una empresa que utiliza la base de datos Northwind, dividida en 
   - `vw_employee_sales`: ventas por empleado.
 
 ### 2. Trigger de Actualización de Stock
- Se ha creado tambien un trigger para actualizar automáticamente la disponibilidad del inventario después de un pedido. */
+ Se ha creado tambien un trigger para actualizar automáticamente la disponibilidad del inventario después de un pedido.
 
 - **Trigger** `trg_update_stock_after_order`  
   Actualiza automáticamente la cantidad en almacén de los productos tras cada nuevo pedido (`AFTER INSERT ON order_details`).
