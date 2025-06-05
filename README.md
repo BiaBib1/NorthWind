@@ -65,7 +65,7 @@ Northwind es una base de datos de ejemplo utilizada para practicar y demostrar c
 1. **Clona el repositorio**
    ```bash
    git clone https://github.com/BiaBib1/NorthWind_PruebaPractica.git
-   cd NorthWind/northwind_dump
+   cd NorthWind_PruebaPractica/northwind_dump
    ```
 
 2. **Entra en la consola de PostgreSQL**
