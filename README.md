@@ -74,7 +74,7 @@ Northwind es una base de datos de ejemplo utilizada para practicar y demostrar c
    ```
 3. **Crea la base de datos**
    ```bash 
-   create database northwind
+   create database northwind;
    ```
 
 4. **Salir de PostgreSQL**
