@@ -70,11 +70,12 @@ Northwind es una base de datos de ejemplo utilizada para practicar y demostrar c
 
 2. **Entra en la consola de PostgreSQL**
    ```bash
-    psql -U postgres
+   :: Modifica el nombre del usuario si es necesario
+    psql -U postgres 
    ```
 3. **Crea la base de datos**
    ```bash 
-   create database northwind;
+   create database northwind_mod;
    ```
 
 4. **Salir de PostgreSQL**
@@ -84,7 +85,8 @@ Northwind es una base de datos de ejemplo utilizada para practicar y demostrar c
 
 5. **Importa el dump**
    ```bash
-   psql -U postgres -d northwind -f northwind_dump.sql
+   :: Modifica el nombre del usuario si es necesario
+   psql -U postgres -d northwind_mod -f northwind_dump.sql
    ```
 
 Usando pgAdmin: crea la base de datos `northwind` y usa "Restore" seleccionando `northwind_dump.sql`.
