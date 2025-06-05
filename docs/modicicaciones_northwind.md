@@ -174,8 +174,8 @@ pg_dump -U postgres -h localhost -p 5432 -d northwind -F p -f "C:\Users\ruta\nor
 
 **Clonar el repositorio y entrar en la carpeta:**
 ```bash
-git clone https://github.com/BiaBib1/NorthWind.git
-cd NorthWind\northwind_dump
+git clone https://github.com/BiaBib1/NorthWind_PruebaPractica.git
+cd NorthWind_PruebaPractica\northwind_dump
 ```
 
 **Entrar en la consola de PostgreSQL y crear la base de datos:**
