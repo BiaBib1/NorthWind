@@ -131,6 +131,13 @@ Se ha imaginado una empresa que utiliza la base de datos Northwind, dividida en 
 - Añadida la columna `caracteristicas_json` de tipo JSONB para almacenar atributos dinámicos de los productos (categoría, subcategoría, etc).
 - Creación de un índice GIN para optimizar las consultas sobre esta columna.
 
+### 5. Índice GIN para JSONB:  
+  Se ha creado un índice GIN sobre la columna `caracteristicas_json` de la tabla `products` para optimizar las búsquedas y consultas sobre datos en formato JSONB. Esto permite realizar consultas rápidas y eficientes sobre los atributos dinámicos de los productos almacenados en dicha columna.
+
+  ```sql
+  CREATE INDEX idx_products_caracteristicas_jsonb
+  ON products USING GIN (caracteristicas_json);
+  ```
 ---
 
 ## 📝 Descripción de `productos.json` y `productos_json.py`
@@ -219,4 +226,6 @@ Esto permite tener datos estructurados y fácilmente consultables mediante funci
 - [NorthWind_PruebaPractica](https://github.com/BiaBib1/NorthWind_PruebaPractica/tree/main)
 
 ---
-**Nota**: El archivo `northwind_dump/northwind_dump.sql` contiene todas las modificaciones y debe ser importado para ver el resultado final en PostgreSQL/pgAdmin.
+**Nota**: 
+- El archivo `northwind_dump/northwind_dump.sql` contiene todas las modificaciones y debe ser importado para ver el resultado final en PostgreSQL/pgAdmin.
+- En el fichero `modificaciones_northwind` se explican todos los cambios y como realizar una nueva copia del database mediante `dump`.
