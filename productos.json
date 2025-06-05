@@ -346,15 +346,15 @@
     {
       "product_id": 50,
       "caracteristicas": {
-        "categoria": "Condiments",
-        "subcategoria": null
+        "categoria": "Dessert",
+        "subcategoria": "Chocolate"
       }
     },
     {
       "product_id": 51,
       "caracteristicas": {
-        "categoria": "Confections",
-        "subcategoria": null
+        "categoria": "Fruits",
+        "subcategoria": "Apple"
       }
     },
     {
@@ -381,22 +381,22 @@
     {
       "product_id": 55,
       "caracteristicas": {
-        "categoria": "Produce",
-        "subcategoria": null
+        "categoria": "Meat",
+        "subcategoria": "Poultry"
       }
     },
     {
       "product_id": 56,
       "caracteristicas": {
-        "categoria": "Seafood",
-        "subcategoria": null
+        "categoria": "Gnocchi",
+        "subcategoria": "Potatoes"
       }
     },
     {
       "product_id": 57,
       "caracteristicas": {
-        "categoria": "Beverages",
-        "subcategoria": null
+        "categoria": "Pasta",
+        "subcategoria": "Cereals"
       }
     },
     {
@@ -409,29 +409,29 @@
     {
       "product_id": 59,
       "caracteristicas": {
-        "categoria": "Confections",
-        "subcategoria": null
+        "categoria": "Cheese",
+        "subcategoria": "Lactose"
       }
     },
     {
       "product_id": 60,
       "caracteristicas": {
-        "categoria": "Dairy Products",
-        "subcategoria": null
+        "categoria": "Cheese",
+        "subcategoria": "Lactose"
       }
     },
     {
       "product_id": 61,
       "caracteristicas": {
-        "categoria": "Grains/Cereals",
-        "subcategoria": null
+        "categoria": "Syrup",
+        "subcategoria": "Sugar"
       }
     },
     {
       "product_id": 62,
       "caracteristicas": {
-        "categoria": "Meat/Poultry",
-        "subcategoria": null
+        "categoria": "Cereales",
+        "subcategoria": "Sugar"
       }
     },
     {
@@ -452,14 +452,14 @@
       "product_id": 65,
       "caracteristicas": {
         "categoria": "Beverages",
-        "subcategoria": null
+        "subcategoria": "Spicy"
       }
     },
     {
       "product_id": 66,
       "caracteristicas": {
         "categoria": "Condiments",
-        "subcategoria": null
+        "subcategoria": "Spicy"
       }
     },
     {
@@ -473,7 +473,7 @@
       "product_id": 68,
       "caracteristicas": {
         "categoria": "Dairy Products",
-        "subcategoria": null
+        "subcategoria": "Cereals"
       }
     },
     {
@@ -500,8 +500,8 @@
     {
       "product_id": 72,
       "caracteristicas": {
-        "categoria": "Seafood",
-        "subcategoria": null
+        "categoria": "Cheese",
+        "subcategoria": "Mozzarella"
       }
     },
     {
@@ -514,8 +514,8 @@
     {
       "product_id": 74,
       "caracteristicas": {
-        "categoria": "Condiments",
-        "subcategoria": null
+        "categoria": "Cereals",
+        "subcategoria": "Soy"
       }
     },
     {
